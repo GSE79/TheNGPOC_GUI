@@ -1,0 +1,65 @@
+@REM BuildScript.bat
+@REM Chart Industries, BioMedical
+@REM Gary Eades
+@REM This build script automates the release build procedure for master and slave psocs
+@REM of the NGPOC.  It relys on an executable produced by Cypress and release with PSoC
+@REM Creator.
+
+
+@echo off
+
+REM Set the Base Install Directory for PSOC Creator
+SET INSTDIR=C:\Program Files (x86)\Cypress\PSoC Creator\
+
+REM Set the Specific Install Directory for this version of psoc creator
+SET VERNUM=4.2\PSoC Creator\bin\cyprjmgr.exe
+
+REM Set the workspace and Project name to be built
+REM SET WRKSPDIR=%1
+SET WRKSPNAME=PSoC Workspace.cywrk
+	
+REM Set the two main commands for build and info
+SET CMDINFO="%INSTDIR%%VERNUM%" -h
+
+
+SET CMDNONE=0
+SET CMDONE=1
+SET CMDTWO=2
+SET CMDTHREE=3
+SET CMDFOUR=4
+
+SET CMDBUILD="%INSTDIR%%VERNUM%" -wrk "%WRKSPNAME%" -build -c "Release"
+
+
+REM Set the path of the buildlog file
+SET BUILDLOG=silentbuildLog.bldlg
+
+
+
+echo ------------------------------------------------------------ > %BUILDLOG%
+echo Build Script Execution from:  >> %BUILDLOG%
+echo %~dp0 >> %BUILDLOG%
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo -  >> %BUILDLOG%
+CD %~dp0 >> %BUILDLOG%
+
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo Build Results will be Saved to:  >> %BUILDLOG%
+echo %BUILDLOG% >> %BUILDLOG%
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo -  >> %BUILDLOG%
+
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo Building from Source at git Commit Hash:  >> %BUILDLOG%
+git rev-parse HEAD >> %BUILDLOG%
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo From Remote Repository: >> %BUILDLOG%
+git remote -v >> %BUILDLOG%
+echo ------------------------------------------------------------ >> %BUILDLOG%
+echo -  >> %BUILDLOG%
+
+
+
+echo %CMDBUILD% >> %BUILDLOG%
+echo - Build in Process...This could take a long time :( >> %BUILDLOG%
+%CMDBUILD% >> %BUILDLOG%
