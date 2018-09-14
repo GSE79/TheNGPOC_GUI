@@ -1,0 +1,64 @@
+//////////////////////////////////////////////////////////
+// Slve_DefaultSettings.h
+// 
+// Default value definitions for the slave psoc of the 
+// Freesytle comfort POC
+//////////////////////////////////////////////////////////
+
+#ifndef SLVEDEFAULTS_H
+#define SLVEDEFAULTS_H
+
+/////////////////////////////////////////////////////////
+// Fan/Thermal Control Defaults
+/////////////////////////////////////////////////////////
+#define Default_FanKp				5.0f		// Proportional Gain
+#define Default_FanTi				20.0f		// Integral Time
+#define Default_CaseTempThresh		4300		// Case Temperature Threshold
+
+/////////////////////////////////////////////////////////
+// Motor/Compressor Control Defaults
+/////////////////////////////////////////////////////////
+#define Default_Kp					0.001f		// Proportional Gain
+#define Default_Ti					0.8f		// Integral Time
+#define Default_PWMLowLim			200.0f		// Lower Limit, PWM Duty Cycle
+#define Default_ALimit				500.0f		// Acceleration Limit
+#define Default_DLimit				100.0f		// Decceleration Limit
+#define Default_ExpAlpha			0.01f		// Exponential Running Average "alpha"
+#define Default_RunNMax				10			// Running Average Max Samples    
+
+/////////////////////////////////////////////////////////
+// PSA Cycle Time and Speed Defaults
+/////////////////////////////////////////////////////////
+#define Default_Speed1				1250		// Compressor Speed - Flow Setting 1
+#define Default_Speed2				1650		// Compressor Speed - Flow Setting 2
+#define Default_Speed3				2250		// Compressor Speed - Flow Setting 3
+#define Default_Speed4				2750		// Compressor Speed - Flow Setting 4
+#define Default_Speed5				3300		// Compressor Speed - Flow Setting 5
+
+#define Default_Time1				2000		// Cycle Time - Start up
+#define Default_Time2				2500		// Cycle Time - Pressurize Bed A
+#define Default_Time3				2500		// Cycle Time - Purge Bed B
+#define Default_Time4				400			// Cycle Time - Equalize 1
+#define Default_Time5				2500		// Cycle Time - Pressurize Bed B
+#define Default_Time6				2500		// Cycle Time - Purge Bed A
+#define Default_Time7				400			// Cycle Time - Equalize 2
+    
+//////////////////////////////////////////////////////////
+// AutoSat Default Settings
+//////////////////////////////////////////////////////////
+#define Default_AutoSatDose1        105         // AutoSat Dose Volume - Flow Setting 1 (.1 ml)
+#define Default_AutoSatDose2        210         // AutoSat Dose Volume - Flow Setting 2 (.1 ml)
+#define Default_AutoSatDose3        315         // AutoSat Dose Volume - Flow Setting 3 (.1 ml)
+#define Default_AutoSatDose4        420         // AutoSat Dose Volume - Flow Setting 4 (.1 ml)
+#define Default_AutoSatDose5        525         // AutoSat Dose Volume - Flow Setting 5 (.1 ml)
+#define Default_AutoSatAccel        1000        // AutoSat Acceleration - (rpm/s)
+#define Default_AutoSatDecel        1000        // AutoSat Acceleration - (rpm/s)
+#define Default_AutoSatBPMSamples   10u         // AutoSat Breath Rate Averages - Samples
+#define Setting1_FPM_Output         2100.0      // Flow Setting 1 Fixed per minute output .1 ml/min
+#define Setting2_FPM_Output         4200.0      // Flow Setting 2 Fixed per minute output .1 ml/min
+#define Setting3_FPM_Output         6300.0      // Flow Setting 3 Fixed per minute output .1 ml/min
+#define Setting4_FPM_Output         8400.0      // Flow Setting 4 Fixed per minute output .1 ml/min
+#define Maximum_FPM_Capacity        10500.0     // Maximum FPM capacity in .1 ml
+#define Minimum_FPM_Capacity        1000.0      // Maximum FPM capacity in .1 ml
+
+#endif
