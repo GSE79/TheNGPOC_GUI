@@ -1,0 +1,87 @@
+@echo off
+
+cls
+REM BinUtils Executable
+SET INSTDIR=C:\Program Files (x86)\Cypress\PSoC Creator\
+SET VERNUM=4.0\PSoC Creator\import\gnu\arm\4.9.3\bin\
+SET ELFCMD=arm-none-eabi-readelf.exe
+SET GDBCMD=arm-none-eabi-gdb.exe
+SET ELFCMDOPTS1= "-S"
+SET ELFCMDOPTS2= "-a"
+SET READELFCMD="%INSTDIR%%VERNUM%%ELFCMD%"
+SET RUNGDBCMD="%INSTDIR%%VERNUM%%GDBCMD%"
+
+REM FW Binaries to Explore
+SET MFWELF=%~dp0\MasterPSoC\Master_PSoC_FW.elf
+SET MBLELF=%~dp0\MasterPSoC\BootLoader\Master_PSoC_Bootloader.elf
+SET SFWELF=%~dp0\SlavePSoC\Slave_PSoC_FW.elf
+SET SBLELF=%~dp0\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.elf
+SET BLEFWELF=%~dp0\BLEPSoC\BLE_PSoC_FW.elf
+SET BLEBLELF=%~dp0\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.elf
+
+REM OutputFiles
+SET MFWOUT=%~dp0\MasterPSoC\Master_PSoC_FW.relflg
+SET MBLOUT=%~dp0\MasterPSoC\BootLoader\Master_PSoC_Bootloader.relflg
+SET SFWOUT=%~dp0\SlavePSoC\Slave_PSoC_FW.relflg
+SET SBLOUT=%~dp0\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.relflg
+SET BLEFWOUT=%~dp0\BLEPSoC\BLE_PSoC_FW.relflg
+SET BLEBLOUT=%~dp0\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.relflg
+
+SET FILESELECT=1
+SET FILEINCREMENT=1
+SET FILEONE=1
+SET FILETWO=2
+SET FILETHREE=3
+SET FILEFOUR=4
+SET FILEFIVE=5
+SET FILESIX=6
+
+IF %1==%FILEONE% (
+SET ELFFILE="%MFWELF%"
+SET OUTFILE="%MFWOUT%"
+)
+IF %1==%FILETWO% (
+SET ELFFILE="%MBLELF%"
+SET OUTFILE="%MBLOUT%"
+)
+IF %1==%FILETHREE% (
+SET ELFFILE="%SFWELF%"
+SET OUTFILE="%SFWOUT%"
+)
+IF %1==%FILEFOUR% (
+SET ELFFILE="%SBLELF%"
+SET OUTFILE="%SBLOUT%"
+)
+IF %1==%FILEFIVE% (
+SET ELFFILE="%BLEFWELF%"
+SET OUTFILE="%BLEFWOUT%"
+)
+IF %1==%FILESIX% (
+SET ELFFILE="%BLEBLELF%"
+SET OUTFILE="%BLEBLOUT%"
+)
+echo ------------------------------------------------------------ > %OUTFILE%
+echo Script Execution from:  >> %OUTFILE%
+echo %~dp0 >> %OUTFILE%
+echo ------------------------------------------------------------ >> %OUTFILE%
+echo -  >> %OUTFILE%
+CD %~dp0 >> %OUTFILE%
+
+
+@echo on
+
+%GDBCMD% -batch -x ELFGDBCommands.gdbinit -s %ELFFILE% -readnow>> %OUTFILE%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
