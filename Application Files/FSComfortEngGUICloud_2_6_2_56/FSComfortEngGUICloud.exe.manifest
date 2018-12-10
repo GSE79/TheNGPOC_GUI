@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FSComfortEngGUICloud.exe" version="2.6.2.56" publicKeyToken="71072a0125e27c98" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="utilities_system_monitor.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FSComfortEngGUICloud" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FSComfortEngGUICloud.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CyUSB.dll" size="135168">
+      <assemblyIdentity name="CyUSB" version="1.2.2.0" publicKeyToken="01F1D2B6C851AE92" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8+B3B3UE51CJT+8yDueDyUq0RxCfZfK52hRYkSESTaY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocumentFormat.OpenXml.dll" size="5812328">
+      <assemblyIdentity name="DocumentFormat.OpenXml" version="2.5.5631.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QPKTp3KzAXgUVXv7b/0Ad8e4HcT9wcqnSY22TDjcwl8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FS Comfort Eng GUI Library.dll" size="712192">
+      <assemblyIdentity name="FS Comfort Eng GUI Library" version="2.6.2.56" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7oOC2SeKMIe+u+fJMmtUlGH78cYp+7J1riVcg42Xnxk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FSComfortEngGUICloud.exe" size="75168">
+      <assemblyIdentity name="FSComfortEngGUICloud" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Mw65epq8aWZZu/kWQSRhetmtOdJspkMUBZdvZHmHqY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mBedXplatform_DLL.dll" size="5632">
+      <assemblyIdentity name="mBedXPlatform_DLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YfU3MZr8QKIVjwQtkeU7nsXGDWxJaCv9+Ql9BW2yJ34=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MechatronicDesignSuite_DLL.dll" size="366592">
+      <assemblyIdentity name="MechatronicDesignSuite_DLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OnRWiIP4ehRQuk2YiUN3xXxa4IXb3BoFG/+Vd8rtqtM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Documentation\NGPOC_SW_Arch.vsdx" size="534143">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Sggf6vYlgWMakjMEa+guaXJ0jb+9F2X55dnGYlmRzQ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\PSoC Executional Timing.xlsx" size="176054">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lghZaLjfI9OgegjmBhEB9liDjTdfv5wotIjVCvPfa98=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FSComfortEngGUICloud.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BLE_PSoC_FW.a" size="748220">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NnWXiNJaJL1eDqnlM0oANMyqQDcrrjx9HIOnmvkuQl4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BLE_PSoC_FW.cyacd" size="237139">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p7FP5sZOe2MyS5Yp+1eFBNX0Cj9Jg277ykJzhOZt1Qw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BLE_PSoC_FW.elf" size="1210236">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1YQYZbJukHtIsxFO2ZIgnhjgsEAkqDuAOjkbTIJdZ8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BLE_PSoC_FW.hex" size="289215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v+ytyYS7yT/X78jdupWMOOzgPwsRWkX4Pk+SgdiLOXU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BLE_PSoC_FW.map" size="1286434">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1cda5TCIpbtt7EbFRJYio8vtmx+WX0J51W5Fka5MrcI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.a" size="606406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LtNQ0NOkj+LBSX2vu/7K6ax2XO42W826RTq2h7o3b4g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.elf" size="498236">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FyXgIVqjpICYx/kbxmHlvHev8itBZtThM55HZWBRBxE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.hex" size="289215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bHVmV+DO4HxLpIbATyYF+2kr6mm79edCIQE96XMj4jg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\BLEPSoC\BootLoader\BLE_PSoC_Bootloader.map" size="89156">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D+Ow9Ykg1eqeX9UyQcxig6sK3+XJAFN1TV0tuPLQzqg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\ElfExaminer.bat" size="2062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+TmEap28m4C1qVmWcUvGmKQUerkE2B5ivPDuoz/3olg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\BootLoader\Master_PSoC_Bootloader.a" size="777816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uFnfcOumQ9CblnbW1VX50zBBkERe1RxROx+X6XwTE9s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\BootLoader\Master_PSoC_Bootloader.elf" size="523900">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BZx3u6O8khhKbcFuVrra7KMIy0oOjYQOag92Z9ZB2lI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\BootLoader\Master_PSoC_Bootloader.hex" size="650552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QywWAVZ68UBOt5wPh4rGsG5eq8PdiHfJbThMrzZvOiY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\BootLoader\Master_PSoC_Bootloader.map" size="129125">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W+/Y6JckyL0ZN3nd+09CViWSEaVSWRsnWcstZ3BTrjQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\GuiRemote.bin" size="362944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9TqvN0t0S+z8OY5uGrhLEEY/oWT6Yj/0e41tEea6vbM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\Master_PSoC_FW.a" size="1478640">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nrolg3FmfH+RVzz+ZvcQW0IWngKLXebWlKzHYB+7nak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\Master_PSoC_FW.cyacd" size="512411">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dCbgy5eY1VnKz+InBNgZ72ZJStA4zIf6ud+eALdB5Qs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\Master_PSoC_FW.elf" size="1396892">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fs1XE+ArO8kq50TGDFb+dLXU3mxacfuV5twEPn+ZPmo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\Master_PSoC_FW.hex" size="650552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDhLZWVSTUEFDxIjsL49yEpc8ApHfyTW1yHPQIxqMKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\MasterPSoC\Master_PSoC_FW.map" size="546569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fwsnKy0G0XAakjRlJ7sVCGWjLox4FNNxH5WkmbywwYY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\silentbuildLog.bldlg" size="69544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qITFYbSVnOjGvo6SU+iddGyKIgKEpBXdFDqdtMQjTy8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SilentBuildScript.bat" size="2078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pe/aCLpzyVuZkBet51DgZwaojZbQezMMQVJe8eHpJ/0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.a" size="940154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SWCFu2h/kB35z9uLHfrNCHUh6XMQtiNyZuAVAB+Rzl8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.elf" size="694504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wJVsSEOmNQZXZICJnXX25Iug970hvyjBrmLxLVDj6/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.hex" size="144609">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UhT2MzHZNBcAx1ZXsDDUTqoUBJtymbhQ+4PHlSUOc0w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\BootLoader\Slave_PSoC_Bootloader.map" size="113571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jPeHR6KiPYMUt8/qCroQkrml2Qy9vwu7P8Jo6Q5CBY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slave_PSoC_FW.a" size="1305990">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5J3tpp1ZcZBwSe2mt9RBiQFRVEk1y4Ffekdnr829sl4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slave_PSoC_FW.cyacd" size="98036">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>21EHUdE+jJv74b8/KOAArytE3w7l9WUdiHK9lxxjnR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slave_PSoC_FW.elf" size="917244">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>e34J3t6Mz4tVwDYGa9KVpK+HMxVvLPZO341yeFVyJ3w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slave_PSoC_FW.hex" size="144609">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsccMQzwpBxQ3K0Gks4bSEhEtXOo7Cxepfju/7rj+58=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slave_PSoC_FW.map" size="263477">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nH8d8KNd8W87FR3weeFftKFOQunSxfJwzGLDY4J9bRg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Programming\SlavePSoC\Slve_DefaultSettings.h" size="3924">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RnzlQcoJrr8UUI7yifvuNQHu0klEpyLqQcP8MyJmt2s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="utilities_system_monitor.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XyZc4PwFROJAnDf0ja6Qrekuh9GfMngJVgkkYMg3VDE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=IMS\geades" issuerKeyHash="6b192de0d7d5181c4dbc4fdb787f2d2d2f52b858" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+aPgXTCV4RDIMA1vDIpOZyP4EAv7t2k3c4pD0hEucwI=</DigestValue></Reference></SignedInfo><SignatureValue>UfaK22Ns8u8h49Jzp2XWrTK3YrRK0G6EceN407j9e5NQWDscTun0QWXCk7XGvHkM/DunrBfRe105YyG9GfFP4dVjCL6sHiqZfIZIqjHPygIZjuWgm4ebGis4QlFlLm7t2X/AfvnL778lH0ilebJPzE/893UD8Yd3voA8ywqtvzA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s+JfLU4wg4AGuRDakQY5Z3r1j7adlnNrS4pSs5Fm7GakeCyPi8XBhvnTJT82lOnEbiEWPcwHleFXFzlb1f0ckXicPG2sjY6y67JkYcI2qIoZqOK9U8PPBUv8v0jeh8eKhw5n0JnQRWO0GxPcLTKZIeybSbh5ruwPJYfZtwGphhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="02732e11d2438a733769b7fb0b10f823674e8a0c6f0d30c810e195305de0a3f9" Description="" Url=""><as:assemblyIdentity name="FSComfortEngGUICloud.exe" version="2.6.2.56" publicKeyToken="71072a0125e27c98" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=IMS\geades</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RluZVzGIBjmrxkVbEq8BEm1oc9hppLE+91bhS37Ruog=</DigestValue></Reference></SignedInfo><SignatureValue>sOwj71qa4iSNjuvMhTRceB0vBHpAGzKlGn4CMBFOimJBYGXQ97YZPo6XXi+Rg3GIADwwTTA3sOOrJ2kCtv4vwuHjrpG0g5iezzkZ05mLt2JzJ/cv5YTjY0jluQ4axnUxvUrVn3vaWNUEOmb4aJo+RyBEzTjs2B3wrKxkD+xS9+A=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s+JfLU4wg4AGuRDakQY5Z3r1j7adlnNrS4pSs5Fm7GakeCyPi8XBhvnTJT82lOnEbiEWPcwHleFXFzlb1f0ckXicPG2sjY6y67JkYcI2qIoZqOK9U8PPBUv8v0jeh8eKhw5n0JnQRWO0GxPcLTKZIeybSbh5ruwPJYfZtwGphhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQbRjQmVxlXpRE2CulkfORhTANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQASQBNAFMAXABnAGUAYQBkAGUAczAeFw0xODA5MTMwMjAxNDFaFw0xOTA5MTMwODAxNDFaMB8xHTAbBgNVBAMeFABJAE0AUwBcAGcAZQBhAGQAZQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCz4l8tTjCDgAa5ENqRBjlnevWPtp2Wc2tLilKzkWbsZqR4LI+LxcGG+dMlPzaU6cRuIRY9zAeV4VcXOVvV/RyReJw8bayNjrLrsmRhwjaoihmo4r1Tw88FS/y/SN6Hx4qHDmfQmdBFY7QbE9wtMpkh7JtJuHmu7A8lh9m3AamGGQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFk8rJpkkKAi6wT4NUVf58PUKsHSu4Qmq7EIJTJQIaGvr6YR7Az6Xc2fu+ZCqG9TmGScZQ/vn1ftguMAABGMx/D/TIbR8I8TaaoNXiTnSo4sIvX2zjxe7skhWTxIBBqyl8AHTJvwqhouUV12b8dZEFAbHOchbjWQzkQsu+CEVNEQ</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
